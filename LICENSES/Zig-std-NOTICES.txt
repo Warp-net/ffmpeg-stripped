@@ -1,0 +1,444 @@
+Zig-std: verbatim license and provenance notices from the supplied source snapshot.
+Includes optional code not necessarily linked into these executables.
+See Zig-MIT.txt, musl-COPYRIGHT.txt, musl-NOTICES.txt, LLVM-compiler-rt-8-LICENSE.txt,
+LLVM-Apache-2.0-with-exceptions.txt, and Go-BSD-3-Clause.txt for license texts.
+
+Files: Build/Step/Compile.zig
+
+/// For WebAssembly targets, this will allow for undefined symbols to
+/// be imported from the host environment.
+
+========================================================================
+
+Files: crypto/chacha20.zig
+
+// Based on public domain Supercop by Daniel J. Bernstein
+
+========================================================================
+
+Files: crypto/ff.zig
+
+//! Allocation-free, (best-effort) constant-time, finite field arithmetic for large integers.
+//!
+//! Unlike `std.math.big`, these integers have a fixed maximum length and are only designed to be used for modular arithmetic.
+//! Arithmetic operations are meant to run in constant-time for a given modulus, making them suitable for cryptography.
+//!
+//! Parts of that code was ported from the BSD-licensed crypto/internal/bigmod/nat.go file in the Go language, itself inspired from BearSSL.
+
+========================================================================
+
+Files: math/acos.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/acosf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/acos.c
+
+========================================================================
+
+Files: math/acosh.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/acoshf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/acosh.c
+
+========================================================================
+
+Files: math/asin.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/asinf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/asin.c
+
+========================================================================
+
+Files: math/asinh.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/asinhf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/asinh.c
+
+========================================================================
+
+Files: math/atan.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/atanf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/atan.c
+
+========================================================================
+
+Files: math/atan2.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/atan2f.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/atan2.c
+
+========================================================================
+
+Files: math/atanh.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/atanhf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/atanh.c
+
+========================================================================
+
+Files: math/cbrt.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/cbrtf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/cbrt.c
+
+========================================================================
+
+Files: math/complex/atan.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/complex/catanf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/complex/catan.c
+
+========================================================================
+
+Files: math/complex/cosh.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/complex/ccoshf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/complex/ccosh.c
+
+========================================================================
+
+Files: math/complex/exp.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/complex/cexpf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/complex/cexp.c
+
+========================================================================
+
+Files: math/complex/ldexp.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/complex/__cexpf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/complex/__cexp.c
+
+========================================================================
+
+Files: math/complex/sinh.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/complex/csinhf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/complex/csinh.c
+
+========================================================================
+
+Files: math/complex/sqrt.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/complex/csqrtf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/complex/csqrt.c
+
+========================================================================
+
+Files: math/complex/tanh.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/complex/ctanhf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/complex/ctanh.c
+
+========================================================================
+
+Files: math/cosh.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/coshf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/cosh.c
+
+========================================================================
+
+Files: math/expm1.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/expmf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/expm.c
+
+========================================================================
+
+Files: math/expo2.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/__expo2f.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/__expo2.c
+
+========================================================================
+
+Files: math/gamma.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/tgamma.c
+
+========================================================================
+
+Files: math/ilogb.zig
+
+// Ported from musl, which is MIT licensed.
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/ilogbl.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/ilogbf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/ilogb.c
+
+========================================================================
+
+Files: math/log.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/logf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/log.c
+
+========================================================================
+
+Files: math/log10.zig
+
+// Based on Rust, which is licensed under the MIT license.
+// https://github.com/rust-lang/rust/blob/f63ccaf25f74151a5d8ce057904cd944074b01d2/LICENSE-MIT
+//
+// https://github.com/rust-lang/rust/blob/f63ccaf25f74151a5d8ce057904cd944074b01d2/library/core/src/num/int_log10.rs
+
+========================================================================
+
+Files: math/log1p.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/log1pf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/log1p.c
+
+========================================================================
+
+Files: math/nextafter.zig
+
+// Based on nextafterf/nextafterl from mingw-w64 which are both public domain.
+// <https://github.com/mingw-w64/mingw-w64/blob/e89de847dd3e05bb8e46344378ce3e124f4e7d1c/mingw-w64-crt/math/nextafterf.c>
+// <https://github.com/mingw-w64/mingw-w64/blob/e89de847dd3e05bb8e46344378ce3e124f4e7d1c/mingw-w64-crt/math/nextafterl.c>
+
+========================================================================
+
+Files: math/pow.zig
+
+// Ported from go, which is licensed under a BSD-3 license.
+// https://golang.org/LICENSE
+//
+// https://golang.org/src/math/pow.go
+
+========================================================================
+
+Files: math/powi.zig
+
+// Based on Rust, which is licensed under the MIT license.
+// https://github.com/rust-lang/rust/blob/360432f1e8794de58cd94f34c9c17ad65871e5b5/LICENSE-MIT
+//
+// https://github.com/rust-lang/rust/blob/360432f1e8794de58cd94f34c9c17ad65871e5b5/src/libcore/num/mod.rs#L3423
+
+========================================================================
+
+Files: math/sinh.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/sinhf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/sinh.c
+
+========================================================================
+
+Files: math/tanh.zig
+
+// Ported from musl, which is licensed under the MIT license:
+// https://git.musl-libc.org/cgit/musl/tree/COPYRIGHT
+//
+// https://git.musl-libc.org/cgit/musl/tree/src/math/tanhf.c
+// https://git.musl-libc.org/cgit/musl/tree/src/math/tanh.c
+
+========================================================================
+
+Files: net.zig
+
+// The following implements a subset of RFC 3484/6724 destination
+    // address selection by generating a single 31-bit sort key for
+    // each address. Rules 3, 4, and 7 are omitted for having
+    // excessive runtime and code size cost and dubious benefit.
+    // So far the label/precedence table cannot be customized.
+    // This implementation is ported from musl libc.
+    // A more idiomatic "ziggy" implementation would be welcome.
+
+========================================================================
+
+Files: net.zig, posix.zig, posix.zig
+
+// This implementation is ported from musl libc.
+    // A more idiomatic "ziggy" implementation would be welcome.
+
+========================================================================
+
+Files: os/linux/IoUring.zig
+
+/// Queues (but does not submit) an SQE to perform a `splice(2)`
+/// Either `fd_in` or `fd_out` must be a pipe.
+/// If `fd_in` refers to a pipe, `off_in` is ignored and must be set to std.math.maxInt(u64).
+/// If `fd_in` does not refer to a pipe and `off_in` is maxInt(u64), then `len` are read
+/// from `fd_in` starting from the file offset, which is incremented by the number of bytes read.
+/// If `fd_in` does not refer to a pipe and `off_in` is not maxInt(u64), then the starting offset of `fd_in` will be `off_in`.
+/// This splice operation can be used to implement sendfile by splicing to an intermediate pipe first,
+/// then splice to the final destination. In fact, the implementation of sendfile in kernel uses splice internally.
+///
+/// NOTE that even if fd_in or fd_out refers to a pipe, the splice operation can still fail with EINVAL if one of the
+/// fd doesn't explicitly support splice peration, e.g. reading from terminal is unsupported from kernel 5.7 to 5.11.
+/// See https://github.com/axboe/liburing/issues/291
+///
+/// Returns a pointer to the SQE so that you can further modify the SQE for advanced use cases.
+
+========================================================================
+
+Files: os/plan9.zig
+
+/// Ported from /sys/include/ape/errno.h
+
+========================================================================
+
+Files: os/windows/ntstatus.zig
+
+/// The service being accessed is licensed for a particular number of connections.
+    /// No more connections can be made to the service at this time because the service has already accepted the maximum number of connections.
+
+========================================================================
+
+Files: os/windows/ntstatus.zig
+
+/// {Windows Evaluation Notification} The evaluation period for this installation of Windows has expired. This system will shutdown in 1 hour.
+    /// To restore access to this installation of Windows, upgrade this installation by using a licensed distribution of this product.
+
+========================================================================
+
+Files: os/windows/ntstatus.zig
+
+/// {License Violation} The system has detected tampering with your registered product type.
+    /// This is a violation of your software license. Tampering with the product type is not permitted.
+
+========================================================================
+
+Files: os/windows/ntstatus.zig
+
+/// The client you are using is not licensed to use this system. Your logon request is denied.
+
+========================================================================
+
+Files: os/windows/ntstatus.zig
+
+/// The system has reached its licensed logon limit. Try again later.
+
+========================================================================
+
+Files: os/windows/ntstatus.zig
+
+/// The system license has expired. Your logon request is denied.
+
+========================================================================
+
+Files: os/windows/ntstatus.zig
+
+/// Your request to connect to this terminal server has been rejected.
+    /// Your terminal server client license number has not been entered for this copy of the terminal client.
+    /// Contact your system administrator for help in entering a valid, unique license number for this terminal server client. Click OK to continue.
+
+========================================================================
+
+Files: os/windows/ntstatus.zig
+
+/// Your request to connect to this terminal server has been rejected.
+    /// Your terminal server client license number is currently being used by another user.
+    /// Contact your system administrator to obtain a new copy of the terminal server client with a valid, unique license number. Click OK to continue.
+
+========================================================================
+
+Files: os/windows/win32error.zig
+
+/// {Windows Evaluation Notification} The evaluation period for this installation of Windows has expired. This system will shutdown in 1 hour.
+    /// To restore access to this installation of Windows, please upgrade this installation using a licensed distribution of this product.
+
+========================================================================
+
+Files: os/windows/win32error.zig
+
+/// Windows cannot open this program because the license enforcement system has been tampered with or become corrupted.
+
+========================================================================
+
+Files: os/windows/win32error.zig
+
+/// The service being accessed is licensed for a particular number of connections.
+    /// No more connections can be made to the service at this time because there are already as many connections as the service can accept.
+
+========================================================================
+
+Files: sort/block.zig
+
+// Implementation ported from https://github.com/BonzaiThePenguin/WikiSort/blob/master/WikiSort.c
+
+========================================================================
+
+Files: tar/output.zig
+
+// This struct was originally copied from
+    // https://github.com/mattnite/tar/blob/main/src/main.zig which is MIT
+    // licensed.
+
+========================================================================
+
+Files: wasm.zig
+
+/// Notates an object to be exported from wasm
+/// to the host.
+
+========================================================================
+

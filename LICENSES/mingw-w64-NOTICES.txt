@@ -1,0 +1,927 @@
+mingw-w64: verbatim notices from the supplied source snapshot.
+This conservative inventory includes optional code that may not be linked.
+Full source files and their original notices are supplied in sources/.
+
+Files: cfguard/mingw_cfguard_support.c, crt/CRT_fp10.c, crt/_newmode.c, crt/charmax.c, crt/crt_handler.c, crt/crtdll.c, crt/crtexe.c, crt/crtexewin.c, crt/cxa_atexit.c, crt/cxa_thread_atexit.c, crt/dll_argv.c, crt/dllargv.c, crt/dllentry.c, crt/gccmain.c, crt/merr.c, crt/mingw_helpers.c, crt/natstart.c, crt/pesect.c, crt/pseudo-reloc-list.c, crt/tls_atexit.c, crt/ucrtbase_compat.c, crt/ucrtexewin.c, crt/udll_argv.c, crt/udllargc.c, crt/usermatherr.c, crt/wildcard.c, crt/xncommod.c, crt/xthdloc.c, crt/xtxtmode.c, include/internal.h, include/oscalls.h, include/sect_attribs.h, libsrc/bits.c, libsrc/ctxtcall-uuid.c, libsrc/dloadhelper.c, libsrc/msxml2.c, libsrc/msxml6.c, libsrc/netcfg-uuid.c, libsrc/vss-uuid.c, libsrc/wbemuuid.c, math/arm/_chgsignl.S, math/arm/sincos.S, math/arm/sincosf.S, math/arm-common/ldexpl.c, math/arm64/_chgsignl.S, math/arm64/rint.c, math/arm64/rintf.c, math/arm64/sincos.S, math/arm64/sincosf.S, math/cbrtl.c, math/coshf.c, math/coshl.c, math/erfl.c, math/expf.c, math/fabsf.c, math/fabsl.c, math/fdiml.c, math/fmal.c, math/fmaxl.c, math/fminl.c, math/fp_consts.c, math/fp_consts.h, math/fp_constsf.c, math/fp_constsl.c, math/fpclassify.c, math/fpclassifyf.c, math/frexpf.c, math/frexpl.c, math/hypotl.c, math/isnan.c, math/isnanf.c, math/isnanl.c, math/ldexpf.c, math/lgamma.c, math/lgammaf.c, math/lgammal.c, math/llrintl.c, math/llroundl.c, math/log10f.c, math/logf.c, math/lrintl.c, math/lroundl.c, math/modff.c, math/modfl.c, math/nextafterl.c, math/nexttoward.c, math/nexttowardf.c, math/powf.c, math/rintl.c, math/roundl.c, math/signbit.c, math/signbitf.c, math/sinhf.c, math/sinhl.c, math/tanhf.c, math/tanhl.c, math/tgammal.c, math/truncl.c, math/x86/acosf.c, math/x86/acosl.c, math/x86/asinf.c, math/x86/asinhl.c, math/x86/asinl.c, math/x86/atan2f.c, math/x86/atan2l.c, math/x86/atanf.c, math/x86/atanhl.c, math/x86/atanl.c, math/x86/ceilf.S, math/x86/ceill.S, math/x86/copysignl.S, math/x86/cosf.c, math/x86/cosl_internal.S, math/x86/cossin.c, math/x86/exp2l.S, math/x86/fastmath.h, math/x86/floorf.S, math/x86/floorl.S, math/x86/fmodf.c, math/x86/fmodl.c, math/x86/fucom.c, math/x86/ilogbl.S, math/x86/internal_logl.S, math/x86/ldexp.c, math/x86/ldexpl.c, math/x86/log10l.S, math/x86/log1pl.S, math/x86/log2f.S, math/x86/log2l.S, math/x86/logbl.c, math/x86/nearbyintl.S, math/x86/remainderl.S, math/x86/remquol.S, math/x86/scalbn.S, math/x86/scalbnf.S, math/x86/scalbnl.S, math/x86/sinf.c, math/x86/sinl_internal.S, math/x86/tanf.c, math/x86/tanl.S, misc/__initenv.c, misc/alarm.c, misc/btowc.c, misc/delay-f.c, misc/delay-n.c, misc/dirname.c, misc/feclearexcept.c, misc/fegetenv.c, misc/fegetexceptflag.c, misc/fegetround.c, misc/feholdexcept.c, misc/feraiseexcept.c, misc/fesetenv.c, misc/fesetexceptflag.c, misc/fesetround.c, misc/fetestexcept.c, misc/feupdateenv.c, misc/fwide.c, misc/getlogin.c, misc/gettimeofday.c, misc/initenv.c, misc/mb_wc_common.h, misc/mingw-access.c, misc/mingw-aligned-malloc.c, misc/mingw_getsp.S, misc/mingw_longjmp.S, misc/mingw_wcstold.c, misc/setjmp.S, misc/sleep.c, misc/tdestroy.c, misc/ucrt-access.c, misc/wcstoimax.c, misc/wcstold.c, misc/wcstoumax.c, misc/wctob.c, misc/wctrans.c, misc/wctype.c, misc/wmemchr.c, misc/wmemcmp.c, misc/wmemcpy.c, misc/wmemmove.c, misc/wmemset.c, stdio/_Exit.c, stdio/fopen64.c, stdio/fseeko64.c, stdio/ftello64.c, stdio/lltoa.c, stdio/lltow.c, stdio/lseek64.c, stdio/mingw_fprintfw.c, stdio/mingw_pformatw.c, stdio/mingw_printfw.c, stdio/mingw_snprintfw.c, stdio/mingw_sprintfw.c, stdio/mingw_vfprintfw.c, stdio/mingw_vprintfw.c, stdio/mingw_vsnprintfw.c, stdio/mingw_vsprintfw.c, stdio/scanf.S, stdio/scanf2-argcount-char.c, stdio/scanf2-argcount-template.c, stdio/scanf2-argcount-wchar.c, stdio/scanf2-template.S, stdio/snprintf.c, stdio/snwprintf.c, stdio/ucrt__snwprintf.c, stdio/ucrt__vscprintf.c, stdio/ucrt__vsnprintf.c, stdio/ucrt__vsnwprintf.c, stdio/ucrt_fprintf.c, stdio/ucrt_fscanf.c, stdio/ucrt_fwprintf.c, stdio/ucrt_printf.c, stdio/ucrt_scanf.c, stdio/ucrt_snprintf.c, stdio/ucrt_sprintf.c, stdio/ucrt_sscanf.c, stdio/ucrt_vfprintf.c, stdio/ucrt_vfscanf.c, stdio/ucrt_vprintf.c, stdio/ucrt_vscanf.c, stdio/ucrt_vsnprintf.c, stdio/ucrt_vsprintf.c, stdio/ucrt_vsscanf.c, stdio/ulltoa.c, stdio/ulltow.c, stdio/vfscanf.c, stdio/vfscanf2.S, stdio/vfwscanf.c, stdio/vfwscanf2.S, stdio/vscanf.c, stdio/vscanf2.S, stdio/vsnprintf.c, stdio/vsnwprintf.c, stdio/vsscanf.c, stdio/vsscanf2.S, stdio/vswscanf.c, stdio/vswscanf2.S, stdio/vwscanf.c, stdio/vwscanf2.S, stdio/wtoll.c
+
+/**
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the mingw-w64 runtime package.
+ * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ */
+
+========================================================================
+
+Files: complex/_cabs.c, complex/cabs.c, complex/cabs.def.h, complex/cabsf.c, complex/cabsl.c, complex/cacos.c, complex/cacos.def.h, complex/cacosf.c, complex/cacosh.def.h, complex/cacosl.c, complex/carg.c, complex/carg.def.h, complex/cargf.c, complex/cargl.c, complex/casin.c, complex/casin.def.h, complex/casinf.c, complex/casinh.def.h, complex/casinl.c, complex/catan.c, complex/catan.def.h, complex/catanf.c, complex/catanh.def.h, complex/catanl.c, complex/ccos.c, complex/ccos.def.h, complex/ccosf.c, complex/ccosh.def.h, complex/ccosl.c, complex/cexp.c, complex/cexp.def.h, complex/cexpf.c, complex/cexpl.c, complex/cimag.c, complex/cimag.def.h, complex/cimagf.c, complex/cimagl.c, complex/clog.c, complex/clog.def.h, complex/clog10.c, complex/clog10.def.h, complex/clog10f.c, complex/clog10l.c, complex/clogf.c, complex/clogl.c, complex/complex_internal.h, complex/conj.c, complex/conj.def.h, complex/conjf.c, complex/conjl.c, complex/cpow.c, complex/cpow.def.h, complex/cpowf.c, complex/cpowl.c, complex/cproj.c, complex/cproj.def.h, complex/cprojf.c, complex/cprojl.c, complex/creal.c, complex/creal.def.h, complex/crealf.c, complex/creall.c, complex/csin.c, complex/csin.def.h, complex/csinf.c, complex/csinh.def.h, complex/csinl.c, complex/csqrt.c, complex/csqrt.def.h, complex/csqrtf.c, complex/csqrtl.c, complex/ctan.c, complex/ctan.def.h, complex/ctanf.c, complex/ctanh.def.h, complex/ctanl.c, math/powi.c, math/powi.def.h, math/powif.c, math/powil.c, math/sqrt.def.h, math/sqrtf.c, math/sqrtl.c, math/x86/acosh.def.h, math/x86/acoshl.c, math/x86/cos.def.h, math/x86/cosl.c, math/x86/exp.def.h, math/x86/expl.c, math/x86/expm1.def.h, math/x86/expm1l.c, math/x86/log.c, math/x86/log.def.h, math/x86/logl.c, math/x86/pow.def.h, math/x86/powl.c, math/x86/sin.def.h, math/x86/sinl.c
+
+/*
+ This Software is provided under the Zope Public License (ZPL) Version 2.1.
+
+ Copyright (c) 2009, 2010 by the mingw-w64 project
+
+ See the AUTHORS file for the list of contributors to the mingw-w64 project.
+
+ This license has been certified as open source. It has also been designated
+ as GPL compatible by the Free Software Foundation (FSF).
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+
+   1. Redistributions in source code must retain the accompanying copyright
+      notice, this list of conditions, and the following disclaimer.
+   2. Redistributions in binary form must reproduce the accompanying
+      copyright notice, this list of conditions, and the following disclaimer
+      in the documentation and/or other materials provided with the
+      distribution.
+   3. Names of the copyright holders must not be used to endorse or promote
+      products derived from this software without prior written permission
+      from the copyright holders.
+   4. The right to distribute this software or to use it for any purpose does
+      not give you the right to use Servicemarks (sm) or Trademarks (tm) of
+      the copyright holders.  Use of them is covered by separate agreement
+      with the copyright holders.
+   5. If any files are modified, you must cause the modified files to carry
+      prominent notices stating that you changed the files and the date of
+      any change.
+
+ Disclaimer
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ``AS IS'' AND ANY EXPRESSED
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+ EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
+ OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+========================================================================
+
+Files: crt/pseudo-reloc.c
+
+/* pseudo-reloc.c
+
+   Contributed by Egor Duda  <deo@logos-m.ru>
+   Modified by addition of runtime_pseudo_reloc version 2
+   by Kai Tietz  <kai.tietz@onevision.com>
+	
+   THIS SOFTWARE IS NOT COPYRIGHTED
+
+   This source code is offered for use in the public domain. You may
+   use, modify or distribute it freely.
+
+   This code is distributed in the hope that it will be useful but
+   WITHOUT ANY WARRANTY. ALL WARRANTIES, EXPRESS OR IMPLIED ARE HEREBY
+   DISCLAMED. This includes but is not limited to warranties of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+*/
+
+========================================================================
+
+Files: crt/tlsmcrt.c, crt/tlsmthread.c, crt/tlssup.c
+
+/**
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the mingw-w64 runtime package.
+ * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ *
+ * Written by Kai Tietz  <kai.tietz@onevision.com>
+ */
+
+========================================================================
+
+Files: crt/tlsthrd.c
+
+/**
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the mingw-w64 runtime package.
+ * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ *
+ * Written by Kai Tietz  <kai.tietz@onevision.com>
+ *
+ * This file is used by if gcc is built with --enable-threads=win32.
+ *
+ * Based on version created by Mumit Khan  <khan@nanotech.wisc.edu>
+ *
+ */
+
+========================================================================
+
+Files: gdtoa/arithchk.c
+
+/****************************************************************
+Copyright (C) 1997, 1998 Lucent Technologies
+All Rights Reserved
+
+Permission to use, copy, modify, and distribute this software and
+its documentation for any purpose and without fee is hereby
+granted, provided that the above copyright notice appear in all
+copies and that both that the copyright notice and this
+permission notice and warranty disclaimer appear in supporting
+documentation, and that the name of Lucent or any of its entities
+not be used in advertising or publicity pertaining to
+distribution of the software without specific, written prior
+permission.
+
+LUCENT DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+IN NO EVENT SHALL LUCENT OR ANY OF ITS ENTITIES BE LIABLE FOR ANY
+SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+THIS SOFTWARE.
+****************************************************************/
+
+========================================================================
+
+Files: gdtoa/dmisc.c, gdtoa/g__fmt.c, gdtoa/g_dfmt.c, gdtoa/g_ffmt.c, gdtoa/g_xfmt.c, gdtoa/gdtoa.h, gdtoa/gethex.c, gdtoa/gmisc.c, gdtoa/sum.c
+
+/****************************************************************
+
+The author of this software is David M. Gay.
+
+Copyright (C) 1998 by Lucent Technologies
+All Rights Reserved
+
+Permission to use, copy, modify, and distribute this software and
+its documentation for any purpose and without fee is hereby
+granted, provided that the above copyright notice appear in all
+copies and that both that the copyright notice and this
+permission notice and warranty disclaimer appear in supporting
+documentation, and that the name of Lucent or any of its entities
+not be used in advertising or publicity pertaining to
+distribution of the software without specific, written prior
+permission.
+
+LUCENT DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+IN NO EVENT SHALL LUCENT OR ANY OF ITS ENTITIES BE LIABLE FOR ANY
+SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+THIS SOFTWARE.
+
+****************************************************************/
+
+========================================================================
+
+Files: gdtoa/dtoa.c, gdtoa/gdtoa.c, gdtoa/misc.c, gdtoa/smisc.c, gdtoa/ulp.c
+
+/****************************************************************
+
+The author of this software is David M. Gay.
+
+Copyright (C) 1998, 1999 by Lucent Technologies
+All Rights Reserved
+
+Permission to use, copy, modify, and distribute this software and
+its documentation for any purpose and without fee is hereby
+granted, provided that the above copyright notice appear in all
+copies and that both that the copyright notice and this
+permission notice and warranty disclaimer appear in supporting
+documentation, and that the name of Lucent or any of its entities
+not be used in advertising or publicity pertaining to
+distribution of the software without specific, written prior
+permission.
+
+LUCENT DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+IN NO EVENT SHALL LUCENT OR ANY OF ITS ENTITIES BE LIABLE FOR ANY
+SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+THIS SOFTWARE.
+
+****************************************************************/
+
+========================================================================
+
+Files: gdtoa/gdtoaimp.h
+
+/****************************************************************
+
+The author of this software is David M. Gay.
+
+Copyright (C) 1998-2000 by Lucent Technologies
+All Rights Reserved
+
+Permission to use, copy, modify, and distribute this software and
+its documentation for any purpose and without fee is hereby
+granted, provided that the above copyright notice appear in all
+copies and that both that the copyright notice and this
+permission notice and warranty disclaimer appear in supporting
+documentation, and that the name of Lucent or any of its entities
+not be used in advertising or publicity pertaining to
+distribution of the software without specific, written prior
+permission.
+
+LUCENT DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+IN NO EVENT SHALL LUCENT OR ANY OF ITS ENTITIES BE LIABLE FOR ANY
+SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+THIS SOFTWARE.
+
+****************************************************************/
+
+========================================================================
+
+Files: gdtoa/hd_init.c, gdtoa/hexnan.c
+
+/****************************************************************
+
+The author of this software is David M. Gay.
+
+Copyright (C) 2000 by Lucent Technologies
+All Rights Reserved
+
+Permission to use, copy, modify, and distribute this software and
+its documentation for any purpose and without fee is hereby
+granted, provided that the above copyright notice appear in all
+copies and that both that the copyright notice and this
+permission notice and warranty disclaimer appear in supporting
+documentation, and that the name of Lucent or any of its entities
+not be used in advertising or publicity pertaining to
+distribution of the software without specific, written prior
+permission.
+
+LUCENT DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+IN NO EVENT SHALL LUCENT OR ANY OF ITS ENTITIES BE LIABLE FOR ANY
+SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+THIS SOFTWARE.
+
+****************************************************************/
+
+========================================================================
+
+Files: gdtoa/qnan.c
+
+/****************************************************************
+
+The author of this software is David M. Gay.
+
+Copyright (C) 2005 by David M. Gay
+All Rights Reserved
+
+Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose and without fee is hereby granted,
+provided that the above copyright notice appear in all copies and that
+both that the copyright notice and this permission notice and warranty
+disclaimer appear in supporting documentation, and that the name of
+the author or any of his current or former employers not be used in
+advertising or publicity pertaining to distribution of the software
+without specific, written prior permission.
+
+THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.  IN
+NO EVENT SHALL THE AUTHOR OR ANY OF HIS CURRENT OR FORMER EMPLOYERS BE
+LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY
+DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
+SOFTWARE.
+
+****************************************************************/
+
+========================================================================
+
+Files: gdtoa/strtodg.c
+
+/****************************************************************
+
+The author of this software is David M. Gay.
+
+Copyright (C) 1998-2001 by Lucent Technologies
+All Rights Reserved
+
+Permission to use, copy, modify, and distribute this software and
+its documentation for any purpose and without fee is hereby
+granted, provided that the above copyright notice appear in all
+copies and that both that the copyright notice and this
+permission notice and warranty disclaimer appear in supporting
+documentation, and that the name of Lucent or any of its entities
+not be used in advertising or publicity pertaining to
+distribution of the software without specific, written prior
+permission.
+
+LUCENT DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+IN NO EVENT SHALL LUCENT OR ANY OF ITS ENTITIES BE LIABLE FOR ANY
+SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+THIS SOFTWARE.
+
+****************************************************************/
+
+========================================================================
+
+Files: gdtoa/strtodnrp.c
+
+/****************************************************************
+
+The author of this software is David M. Gay.
+
+Copyright (C) 2004 by David M. Gay.
+All Rights Reserved
+Based on material in the rest of /netlib/fp/gdota.tar.gz,
+which is copyright (C) 1998, 2000 by Lucent Technologies.
+
+Permission to use, copy, modify, and distribute this software and
+its documentation for any purpose and without fee is hereby
+granted, provided that the above copyright notice appear in all
+copies and that both that the copyright notice and this
+permission notice and warranty disclaimer appear in supporting
+documentation, and that the name of Lucent or any of its entities
+not be used in advertising or publicity pertaining to
+distribution of the software without specific, written prior
+permission.
+
+LUCENT DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+IN NO EVENT SHALL LUCENT OR ANY OF ITS ENTITIES BE LIABLE FOR ANY
+SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+THIS SOFTWARE.
+
+****************************************************************/
+
+========================================================================
+
+Files: gdtoa/strtof.c, gdtoa/strtopx.c
+
+/****************************************************************
+
+The author of this software is David M. Gay.
+
+Copyright (C) 1998, 2000 by Lucent Technologies
+All Rights Reserved
+
+Permission to use, copy, modify, and distribute this software and
+its documentation for any purpose and without fee is hereby
+granted, provided that the above copyright notice appear in all
+copies and that both that the copyright notice and this
+permission notice and warranty disclaimer appear in supporting
+documentation, and that the name of Lucent or any of its entities
+not be used in advertising or publicity pertaining to
+distribution of the software without specific, written prior
+permission.
+
+LUCENT DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+IN NO EVENT SHALL LUCENT OR ANY OF ITS ENTITIES BE LIABLE FOR ANY
+SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+THIS SOFTWARE.
+
+****************************************************************/
+
+========================================================================
+
+Files: libsrc/dxva-uuid.c
+
+/**
+ * DISCLAIMER
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the mingw-w64 runtime package.
+ *
+ * The mingw-w64 runtime package and its code is distributed in the hope that it
+ * will be useful but WITHOUT ANY WARRANTY.  ALL WARRANTIES, EXPRESSED OR
+ * IMPLIED ARE HEREBY DISCLAIMED.  This includes but is not limited to
+ * warranties of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ */
+
+========================================================================
+
+Files: math/arm/s_rint.c, math/arm/s_rintf.c
+
+/*
+ * ====================================================
+ * Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
+ *
+ * Developed at SunPro, a Sun Microsystems, Inc. business.
+ * Permission to use, copy, modify, and distribute this
+ * software is freely granted, provided that this notice
+ * is preserved.
+ * ====================================================
+ */
+
+========================================================================
+
+Files: math/bsd_private_base.h
+
+/*
+* ====================================================
+* Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
+*
+* Developed at SunPro, a Sun Microsystems, Inc. business.
+* Permission to use, copy, modify, and distribute this
+* software is freely granted, provided that this notice
+* is preserved.
+* ====================================================
+*/
+
+========================================================================
+
+Files: math/signgam.c
+
+/*
+ This Software is provided under the Zope Public License (ZPL) Version 2.1.
+
+ Copyright (c) 2012 by the mingw-w64 project
+
+ See the AUTHORS file for the list of contributors to the mingw-w64 project.
+
+ This license has been certified as open source. It has also been designated
+ as GPL compatible by the Free Software Foundation (FSF).
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+
+   1. Redistributions in source code must retain the accompanying copyright
+      notice, this list of conditions, and the following disclaimer.
+   2. Redistributions in binary form must reproduce the accompanying
+      copyright notice, this list of conditions, and the following disclaimer
+      in the documentation and/or other materials provided with the
+      distribution.
+   3. Names of the copyright holders must not be used to endorse or promote
+      products derived from this software without prior written permission
+      from the copyright holders.
+   4. The right to distribute this software or to use it for any purpose does
+      not give you the right to use Servicemarks (sm) or Trademarks (tm) of
+      the copyright holders.  Use of them is covered by separate agreement
+      with the copyright holders.
+   5. If any files are modified, you must cause the modified files to carry
+      prominent notices stating that you changed the files and the date of
+      any change.
+
+ Disclaimer
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ``AS IS'' AND ANY EXPRESSED
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+ EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
+ OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+========================================================================
+
+Files: math/x86/_chgsignl.S
+
+/**
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the mingw-w64 runtime package.
+ * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ *
+ * IEEE 854 double-extended-precision format
+ * unsigned int mantissa1:32
+ * unsigned int mantissa0:32
+ * unsigned int exponent:15
+ * unsigned int negative:1
+ * unsigned int empty:16
+ *
+ * long double _chgsignl(long double x) {
+ *   ((unsigned int *) &x)[2] ^= 0x00008000;
+ *   return x;
+ * }
+ */
+
+========================================================================
+
+Files: math/x86/acosf.c, math/x86/asinf.c
+
+/*
+ * Written by J.T. Conklin <jtc@netbsd.org>.
+ * Public domain.
+ */
+
+========================================================================
+
+Files: math/x86/asinl.c
+
+/*
+ * Written by J.T. Conklin <jtc@netbsd.org>.
+ * Public domain.
+ * Adapted for long double type by Danny Smith <dannysmith@users.sourceforge.net>.
+ */
+
+========================================================================
+
+Files: math/x86/atan2f.c, math/x86/atanf.c
+
+/*
+ * Written by J.T. Conklin <jtc@netbsd.org>.
+ * Public domain.
+ *
+ */
+
+========================================================================
+
+Files: math/x86/copysignl.S, math/x86/logbl.c
+
+/*
+ * Written by J.T. Conklin <jtc@netbsd.org>.
+ * Changes for long double by Ulrich Drepper <drepper@cygnus.com>
+ * Public domain.
+ */
+
+========================================================================
+
+Files: math/x86/fmodf.c
+
+/*
+ * Written by J.T. Conklin <jtc@netbsd.org>.
+ * Public domain.
+ *
+ * Adapted for float type by Danny Smith
+ *  <dannysmith@users.sourceforge.net>.
+ */
+
+========================================================================
+
+Files: misc/delayimp.c
+
+/**
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the mingw-w64 runtime package.
+ * No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ *
+ * This file is derived from Microsoft implementation file delayhlp.cpp, which
+ * is free for users to modify and derive.
+ */
+
+========================================================================
+
+Files: misc/dirent.c
+
+/*
+ * dirent.c
+ * This file has no copyright assigned and is placed in the Public Domain.
+ * This file is part of the mingw-runtime package.
+ * No warranty is given; refer to the file DISCLAIMER within the package.
+ *
+ * Derived from DIRLIB.C by Matt J. Weinstein
+ * This note appears in the DIRLIB.H
+ * DIRLIB.H by M. J. Weinstein   Released to public domain 1-Jan-89
+ *
+ * Updated by Jeremy Bettis <jeremy@hksys.com>
+ * Significantly revised and rewinddir, seekdir and telldir added by Colin
+ * Peters <colin@fu.is.saga-u.ac.jp>
+ *	
+ */
+
+========================================================================
+
+Files: misc/getopt.c
+
+/*
+ * Copyright (c) 2002 Todd C. Miller <Todd.Miller@courtesan.com>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ *
+ * Sponsored in part by the Defense Advanced Research Projects
+ * Agency (DARPA) and Air Force Research Laboratory, Air Force
+ * Materiel Command, USAF, under agreement number F39502-99-1-0512.
+ */
+
+========================================================================
+
+Files: misc/getopt.c
+
+/*-
+ * Copyright (c) 2000 The NetBSD Foundation, Inc.
+ * All rights reserved.
+ *
+ * This code is derived from software contributed to The NetBSD Foundation
+ * by Dieter Baron and Thomas Klausner.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE NETBSD FOUNDATION, INC. AND CONTRIBUTORS
+ * ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+ * TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR CONTRIBUTORS
+ * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGE.
+ */
+
+========================================================================
+
+Files: misc/mingw-aligned-malloc.c
+
+/*
+  __mingw_aligned_malloc and friends, implemented using Microsoft's public
+  interfaces and with the help of the algorithm description provided
+  by Wu Yongwei: http://sourceforge.net/mailarchive/message.php?msg_id=3847075
+
+  I hereby place this implementation in the public domain.
+               -- Steven G. Johnson (stevenj@alum.mit.edu)
+*/
+
+========================================================================
+
+Files: misc/mingw_wcstold.c, misc/wcstof.c
+
+/* This routine has been placed in the public domain.*/
+
+========================================================================
+
+Files: misc/tdelete.c, misc/tfind.c, misc/tsearch.c, misc/twalk.c
+
+/*
+ * Tree search generalized from Knuth (6.2.2) Algorithm T just like
+ * the AT&T man page says.
+ *
+ * The node_t structure is for internal use only, lint doesn't grok it.
+ *
+ * Written by reading the System V Interface Definition, not the code.
+ *
+ * Totally public domain.
+ */
+
+========================================================================
+
+Files: misc/wcstoimax.c, misc/wcstoumax.c
+
+/*
+    This source code was extracted from the Q8 package created and
+    placed in the PUBLIC DOMAIN by Doug Gwyn <gwyn@arl.mil>
+
+    last edit:	1999/11/05	gwyn@arl.mil
+
+	Implements subclause 7.8.2 of ISO/IEC 9899:1999 (E).
+
+	This particular implementation requires the matching <inttypes.h>.
+	It also assumes that character codes for A..Z and a..z are in
+	contiguous ascending order; this is true for ASCII but not EBCDIC.
+*/
+
+========================================================================
+
+Files: misc/wctrans.c
+
+/*
+   wctrans.c 
+   7.25.3.2 Extensible wide-character case mapping functions
+
+   Contributed by: Danny Smith  <dannysmith@usesr.sourcefoge.net>
+   		   2005-02-24
+   
+  This source code is placed in the PUBLIC DOMAIN. It is modified
+  from the Q8 package created by Doug Gwyn <gwyn@arl.mil>  
+
+ */
+
+========================================================================
+
+Files: misc/wctype.c
+
+/*
+  wctype.c
+  7.25.2.2.2 The wctype function
+
+  Contributed by: Danny Smith  <dannysmith@usesr.sourcefoge.net>
+		  2005-02-24
+   
+  This source code is placed in the PUBLIC DOMAIN. It is modified
+  from the Q8 package created by Doug Gwyn <gwyn@arl.mil>  
+
+  The wctype function constructs a value with type wctype_t that
+  describes a class of wide characters identified by the string
+  argument property.
+
+  In particular, we map the property strings so that:
+
+  iswctype(wc, wctype("alnum")) == iswalnum(wc) 
+  iswctype(wc, wctype("alpha")) == iswalpha(wc)
+  iswctype(wc, wctype("cntrl")) == iswcntrl(wc)
+  iswctype(wc, wctype("digit")) == iswdigit(wc)
+  iswctype(wc, wctype("graph")) == iswgraph(wc)
+  iswctype(wc, wctype("lower")) == iswlower(wc)
+  iswctype(wc, wctype("print")) == iswprint(wc)
+  iswctype(wc, wctype("punct")) == iswpunct(wc)
+  iswctype(wc, wctype("space")) == iswspace(wc)
+  iswctype(wc, wctype("upper")) == iswupper(wc)
+  iswctype(wc, wctype("xdigit")) == iswxdigit(wc)
+
+*/
+
+========================================================================
+
+Files: misc/wmemcmp.c
+
+/*	This source code was extracted from the Q8 package created and placed
+    in the PUBLIC DOMAIN by Doug Gwyn <gwyn@arl.mil>
+    last edit:	1999/11/05	gwyn@arl.mil
+
+    Implements subclause 7.24 of ISO/IEC 9899:1999 (E).
+
+	It supports an encoding where all char codes are mapped
+	to the *same* code values within a wchar_t or wint_t,
+	so long as no other wchar_t codes are used by the program.
+
+*/
+
+========================================================================
+
+Files: stdio/mingw_pformat.c
+
+/* pformat.c
+ *
+ * $Id: pformat.c,v 1.9 2011/01/07 22:57:00 keithmarshall Exp $
+ *
+ * Provides a core implementation of the formatting capabilities
+ * common to the entire `printf()' family of functions; it conforms
+ * generally to C99 and SUSv3/POSIX specifications, with extensions
+ * to support Microsoft's non-standard format specifications.
+ *
+ * Written by Keith Marshall <keithmarshall@users.sourceforge.net>
+ *
+ * This is free software.  You may redistribute and/or modify it as you
+ * see fit, without restriction of copyright.
+ *
+ * This software is provided "as is", in the hope that it may be useful,
+ * but WITHOUT WARRANTY OF ANY KIND, not even any implied warranty of
+ * MERCHANTABILITY, nor of FITNESS FOR ANY PARTICULAR PURPOSE.  At no
+ * time will the author accept any form of liability for any damages,
+ * however caused, resulting from the use of this software.
+ *
+ * The elements of this implementation which deal with the formatting
+ * of floating point numbers, (i.e. the `%e', `%E', `%f', `%F', `%g'
+ * and `%G' format specifiers, but excluding the hexadecimal floating
+ * point `%a' and `%A' specifiers), make use of the `__gdtoa' function
+ * written by David M. Gay, and are modelled on his sample code, which
+ * has been deployed under its accompanying terms of use:--
+ *
+ ******************************************************************
+ * Copyright (C) 1997, 1999, 2001 Lucent Technologies
+ * All Rights Reserved
+ *
+ * Permission to use, copy, modify, and distribute this software and
+ * its documentation for any purpose and without fee is hereby
+ * granted, provided that the above copyright notice appear in all
+ * copies and that both that the copyright notice and this
+ * permission notice and warranty disclaimer appear in supporting
+ * documentation, and that the name of Lucent or any of its entities
+ * not be used in advertising or publicity pertaining to
+ * distribution of the software without specific, written prior
+ * permission.
+ *
+ * LUCENT DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+ * INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
+ * IN NO EVENT SHALL LUCENT OR ANY OF ITS ENTITIES BE LIABLE FOR ANY
+ * SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+ * IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ * ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+ * THIS SOFTWARE.
+ ******************************************************************
+ *
+ */
+
+========================================================================
+
+Files: stdio/mingw_vfscanf.c, stdio/mingw_wvfscanf.c
+
+/*
+ This Software is provided under the Zope Public License (ZPL) Version 2.1.
+
+ Copyright (c) 2011 by the mingw-w64 project
+
+ See the AUTHORS file for the list of contributors to the mingw-w64 project.
+
+ This license has been certified as open source. It has also been designated
+ as GPL compatible by the Free Software Foundation (FSF).
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+
+   1. Redistributions in source code must retain the accompanying copyright
+      notice, this list of conditions, and the following disclaimer.
+   2. Redistributions in binary form must reproduce the accompanying
+      copyright notice, this list of conditions, and the following disclaimer
+      in the documentation and/or other materials provided with the
+      distribution.
+   3. Names of the copyright holders must not be used to endorse or promote
+      products derived from this software without prior written permission
+      from the copyright holders.
+   4. The right to distribute this software or to use it for any purpose does
+      not give you the right to use Servicemarks (sm) or Trademarks (tm) of
+      the copyright holders.  Use of them is covered by separate agreement
+      with the copyright holders.
+   5. If any files are modified, you must cause the modified files to carry
+      prominent notices stating that you changed the files and the date of
+      any change.
+
+ Disclaimer
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ``AS IS'' AND ANY EXPRESSED
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+ EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
+ OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+========================================================================
+
+Files: stdio/strtok_r.c
+
+/*-
+ * Copyright (c) 1998 Softweyr LLC.  All rights reserved.
+ *
+ * strtok_r, from Berkeley strtok
+ * Oct 13, 1998 by Wes Peters <wes@softweyr.com>
+ *
+ * Copyright (c) 1988, 1993
+ *	The Regents of the University of California.  All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notices, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notices, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. Neither the name of the University nor the names of its contributors
+ *    may be used to endorse or promote products derived from this software
+ *    without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY SOFTWEYR LLC, THE REGENTS AND CONTRIBUTORS
+ * ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ * PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL SOFTWEYR LLC, THE
+ * REGENTS, OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ * TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+========================================================================
+
+Files: stdio/vscanf.c
+
+//  By aaronwl 2003-01-28 for mingw-msvcrt
+//  Public domain: all copyrights disclaimed, absolutely no warranties
+
+========================================================================
+
+Files: stdio/vwscanf.c
+
+//  By aaronwl 2003-01-28 for mingw-msvcrt.
+//  Public domain: all copyrights disclaimed, absolutely no warranties.
+
+========================================================================
+

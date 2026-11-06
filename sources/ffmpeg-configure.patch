@@ -1,0 +1,20 @@
+--- a/configure
++++ b/configure
+@@ -5790,7 +5790,7 @@
+         SHFLAGS='-dynamiclib -Wl,-single_module -Wl,-install_name,$(INSTALL_NAME_DIR)/$(SLIBNAME_WITH_MAJOR),-current_version,$(LIBVERSION),-compatibility_version,$(LIBMAJOR)'
+         enabled x86_32 && append SHFLAGS -Wl,-read_only_relocs,suppress
+         strip="${strip} -x"
+-        add_ldflags -Wl,-dynamic,-search_paths_first
++        # Zig's Darwin linker uses dynamic linking by default and rejects -dynamic.
+         check_cflags -Werror=partial-availability
+         SLIBSUF=".dylib"
+         SLIBNAME_WITH_VERSION='$(SLIBPREF)$(FULLNAME).$(LIBVERSION)$(SLIBSUF)'
+@@ -5871,7 +5871,7 @@
+         if enabled x86_32; then
+             disabled debug && add_ldexeflags -Wl,--pic-executable,-e,_mainCRTStartup
+         elif enabled x86_64; then
+-            disabled debug && add_ldexeflags -Wl,--pic-executable,-e,mainCRTStartup
++            # Zig/lld retains ASLR relocations without the binutils workaround.
+             check_ldflags -Wl,--high-entropy-va # binutils 2.25
+             # Set image base >4GB for extra entropy with HEASLR
+             add_ldexeflags -Wl,--image-base,0x140000000

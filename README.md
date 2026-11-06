@@ -46,18 +46,12 @@ Linux binaries are fully static (musl). Windows requires system DLLs, including
 the Universal CRT. macOS requires version 11 or later; binaries are not notarized.
 No separate FFmpeg, x264, or zlib shared libraries are needed.
 
-## Update embedded binaries
-
-Replace the executables in `linux-*`, `macos-*`, and `windows-*`, then run:
-
-```sh
-go generate ./...
-```
-
-This regenerates the reproducible gzip archives in `bin/` and requires `sh` and
-`gzip`. Each platform directory includes the original build’s `config.mak`.
-
 ## License
 
-The bundled FFmpeg build includes x264 and is distributed under GPL v2 or later.
-See [LICENSE](LICENSE).
+The Go wrapper and bundled FFmpeg/x264 executables are distributed under
+GPL-2.0-or-later; see [LICENSE](LICENSE). Third-party license texts and notices
+are in [LICENSES](LICENSES/README.md). Corresponding sources, build instructions,
+and checksums are in [sources](sources/README.md).
+
+When redistributing the embedded executables, preserve the applicable licenses
+and notices and provide corresponding source code as required by the GPL.
