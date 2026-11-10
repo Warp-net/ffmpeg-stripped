@@ -36,6 +36,7 @@ iOS, and other targets return `ffmpeg.ErrUnsupported`.
 
 - Local MP4/MOV input with H.264 video and PNG images.
 - Frame-rate conversion, image overlays, and MP4/H.264 output via x264.
+- Raw decoded frames (`-f rawvideo`), for example small grayscale frames for analysis.
 - Copying MP4-compatible audio without decoding or re-encoding.
 
 Other video decoders, networking, capture devices, `ffprobe`, and `ffplay` are
@@ -48,8 +49,9 @@ No separate FFmpeg, x264, or zlib shared libraries are needed.
 
 ## Frame replacement example
 
-The overlay PNG must be opaque and match the video dimensions. This replaces
-frames 24, 49, and so on in the 25 FPS output, while copying compatible audio:
+For full-frame replacement the overlay PNG must be opaque and match the video
+dimensions; a PNG with an alpha channel is blended over the frame instead. This
+replaces frames 24, 49, and so on in the 25 FPS output, while copying compatible audio:
 
 ```sh
 ./ffmpeg -i input.mp4 -loop 1 -framerate 25 -i frame.png \
@@ -63,7 +65,8 @@ MP4 frame with zero duration that was not returned during decoding.
 
 ## How the binaries were built
 
-Built on November 6, 2026, on Linux x86-64 using Zig as a cross-compiler.
+Built on November 6, 2026, and rebuilt on November 10, 2026, with the `rawvideo`
+encoder and muxer added, on Linux x86-64 using Zig as a cross-compiler.
 This configuration targets the workflow above; it is not a general-purpose
 FFmpeg build or a proven minimum-size build.
 
@@ -89,12 +92,12 @@ Sizes are uncompressed bytes, excluding source archives and documentation.
 
 | Build target | Zig target | Format | Bytes |
 |---|---|---|---:|
-| `linux-x86_64` | `x86_64-linux-musl` | ELF x86-64 | 3,294,000 |
-| `linux-arm64` | `aarch64-linux-musl` | ELF AArch64 | 3,158,704 |
-| `windows-x86_64` | `x86_64-windows-gnu` | PE32+ x86-64 | 3,061,760 |
-| `windows-arm64` | `aarch64-windows-gnu` | PE32+ AArch64 | 2,715,136 |
-| `macos-x86_64` | `x86_64-macos.11.0` | Mach-O x86-64 | 3,091,717 |
-| `macos-arm64` | `aarch64-macos.11.0` | Mach-O ARM64 | 3,044,472 |
+| `linux-x86_64` | `x86_64-linux-musl` | ELF x86-64 | 3,296,096 |
+| `linux-arm64` | `aarch64-linux-musl` | ELF AArch64 | 3,160,504 |
+| `windows-x86_64` | `x86_64-windows-gnu` | PE32+ x86-64 | 3,066,368 |
+| `windows-arm64` | `aarch64-windows-gnu` | PE32+ AArch64 | 2,719,744 |
+| `macos-x86_64` | `x86_64-macos.11.0` | Mach-O x86-64 | 3,091,975 |
+| `macos-arm64` | `aarch64-macos.11.0` | Mach-O ARM64 | 3,044,744 |
 
 ### Dependencies and configuration
 
@@ -121,8 +124,8 @@ No standalone x264 CLI is built. FFmpeg is configured with:
 --enable-small --disable-asm --disable-stripping
 --enable-gpl --enable-libx264 --enable-zlib
 --enable-protocol=file
---enable-demuxer=mov,image2,png_pipe --enable-muxer=mp4
---enable-decoder=h264,png --enable-encoder=libx264
+--enable-demuxer=mov,image2,png_pipe --enable-muxer=mp4,rawvideo
+--enable-decoder=h264,png --enable-encoder=libx264,rawvideo
 --enable-parser=h264,png
 --enable-filter=buffer,buffersink,fps,setpts,overlay,scale,format,null
 --pkg-config-flags=--static
@@ -215,6 +218,11 @@ across different host environments and workspace paths have not been verified.
 | Linux ARM64 | ELF format, architecture, static linking; not executed |
 | Windows ARM64 | PE format, architecture, DLL imports; not executed |
 | macOS x86-64 and ARM64 | Mach-O format, architecture, dynamic dependencies; not executed |
+
+The November 10 rebuild was executed on Linux x86-64 only: it decoded a 600-frame
+720p H.264 clip to 160×90 grayscale `rawvideo` and encoded one frame with an
+alpha PNG overlay through x264. The other five targets were cross-built from the
+same scripts and not executed.
 
 The frame-replacement test decoded all 50 frames of a two-second black video
 at 25 FPS with a white PNG overlay: zero-based frames 24 and 49 were white,

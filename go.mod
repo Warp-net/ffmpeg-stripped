@@ -1,3 +1,3 @@
 module github.com/Warp-net/ffmpeg-stripped
 
-go 1.26.5
+go 1.26.3
